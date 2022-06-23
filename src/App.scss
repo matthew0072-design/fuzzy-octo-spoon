@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&display=swap');
+
+h1 {
+  font-family: 'Fraunces', serif;
+  color: #fff;
+  font-size: min(max(2rem, 3.5vw), 3.5rem);
+  line-height: normal;
+  letter-spacing: 8.75px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Fraunces', serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.hero {
+  height: 50rem;
+  background: url(./assets/images/jumbo-bg.jpg);
+  background-position: center center;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem min(max(1rem, 2.5vw), 2.5rem) 0;
+
+  .site-logo {
+    width: 170px;
+    height: 40px;
+  }
+
+  nav {
+    margin-left: auto;
+  }
+
+  nav ul {
+    font-family: 'Barlow', sans-serif;
+    display: flex;
+    list-style: none;
+    color: #fff;
+    font-weight: 600;
+
+    li {
+      margin-left: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .contact {
+    background: #fff;
+    color: #000;
+    width: 140px;
+    text-transform: uppercase;
+    height: 56px;
+    border-radius: 28px;
+    font-family: 'Fraunces', serif;
+    font-size: 15px;
+  }
+}
+
+.transform {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  & > div {
+    display: flex;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: min(max(1.8rem, 2.5vw), 2.5rem);
+    margin: 0;
+  }
+
+  p {
+    margin: 32px 0 40px;
+    line-height: 30px;
+  }
+
+  div > div {
+    max-width: 445px;
+    margin: auto; 
+    padding: min(max(2rem, 2.5vw), 2.5rem);
+  }
+
+  a {
+    text-decoration: none;
+    font-family: 'Fraunces', serif;
+    color: #000;
+    display: block;
+    position: relative;
+
+    &:after {
+      content: '';
+      width: 10ch;
+      height: 5px;
+      position: absolute;
+      bottom: 1px;
+      background: rgba(250, 212, 0, 0.25);
+      left: 0;
+      border-radius: 28px;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.stand-out {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  & > div {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: min(max(1.8rem, 2.5vw), 2.5rem);
+    margin: 0;
+  }
+
+  p {
+    margin: 32px 0 40px;
+    line-height: 30px;
+  }
+
+  div > div {
+    max-width: 445px;
+    margin: auto; 
+    padding: min(max(2rem, 2.5vw), 2.5rem);
+  }
+
+  a {
+    text-decoration: none;
+    font-family: 'Fraunces', serif;
+    color: #000;
+    display: block;
+    position: relative;
+
+    &:after {
+      content: '';
+      width: 10ch;
+      height: 5px;
+      position: absolute;
+      bottom: 1px;
+      background: rgba(254, 119, 102, 0.25);
+      left: 0;
+      border-radius: 28px;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.gandp {
+  display: flex;
+}
+
+.graphic-design {
+  flex-basis: 50%;
+  position: relative;
+  height: 600px;
+  
+
+  img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+
+  & > div {
+    position: absolute;
+    top:55%;
+    max-width: 339px;
+    width: 100%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+
+    p {
+      line-height: 30px;
+      padding: 0 min(max(1rem, 2.5vw), 2.5rem);
+    }
+  }
+}
+
+.photography {
+  flex-basis: 50%;
+  position: relative;
+  height: 600px;
+
+  img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+
+  & > div {
+    position: absolute;
+    top: 55%;
+    max-width: 339px;
+    width: 100%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+
+    p {
+      line-height: 30px;
+      padding: 0 min(max(1rem, 2.5vw), 2.5rem);
+    }
+  }
+}
+
+.testimonials {
+  margin: min(max(4rem, 10vw), 10rem) 0;
+
+  h2 {
+    text-align: center;
+    color: #A7AAAD;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    // padding: min(max(1rem, 5.063vw), 5.063rem);
+    padding: 1rem;
+  }
+
+  .testimonial {
+    text-align: center;
+    font-weight: 600;
+
+    .description {
+      margin: min(max(2rem, 5.313vw), 5.313rem) 0;
+      line-height: 32px;
+      color: #5B636D;
+    }
+
+    .name {
+      font-family: 'Fraunces', serif;
+      font-weight: 900;
+    }
+
+    .position {
+      color: #A7AAAD;
+      font-size: 14px;
+    }
+  }
+}
+
+.footer-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  img {
+    width: 100%;
+  }
+}
+
+footer {
+  background: #90D4C6;
+  text-align: center;
+  padding: min(max(4rem, 4.5vw), 4.5rem) 0;
+
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    grid-column-gap: 58px;
+    padding: 0;
+    margin: min(max(1.5rem, 2.5vw), 2.5rem) 0 min(max(3rem, 5.5vw), 5.5rem);
+    color: #458D7E;
+    font-weight: 600;
+  }
+
+  nav {
+    max-width: 287px;
+    margin: 0 auto;
+  }
+
+  & > ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 287px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: space-around;
+  }
+}
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .site-header {
+    nav {
+      display: none;
+    }
+  }
+  
+  .transform {
+    grid-template-columns: 1fr;
+
+    & > div {
+      // display: flex;
+      // align-items: center;
+      height: 50vh;
+    }
+
+    img {
+      height: 50vh;
+    }
+  }
+
+  .stand-out {
+    grid-template-columns: 1fr;
+
+    & > div {
+      // display: flex;
+      // align-items: center;
+      height: 50vh;
+      order: -1;
+    }
+
+    img {
+      height: 50vh;
+    }
+  }
+
+  .gandp {
+    flex-direction: column;
+  }
+
+  .graphic-design {
+    flex-basis: 0;
+  }
+
+  .testimonials {
+    .testimonial {
+      max-width: 540px;
+      margin: 0 auto;
+    }
+
+    .wrapper {
+      grid-template-columns: 1fr;
+      grid-row-gap: 1.5rem;
+      // width: 100%;
+    }
+  }
+}
